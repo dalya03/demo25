@@ -1,1 +1,49 @@
+How the Code Works (Brief Explanation)
+Server Setup:
 
+The code uses Express.js to create a web server.
+It listens on a specified port (8000 by default).
+Static files can be served from the public directory.
+Endpoints:
+
+/: Returns "Hello World".
+/tmp/poem: Returns a predefined poem.
+/tmp/quote: Returns a random inspirational quote from a list.
+/tmp/sum/:a/:b: Accepts two numbers in the URL, calculates their sum, and returns it.
+Error Handling:
+
+If invalid numbers are passed to /tmp/sum/:a/:b, the server responds with an error message.
+HTTP Codes:
+
+Uses status codes like 200 OK for success or 400 Bad Request for invalid input.
+How to Run the Code
+Install Node.js:
+
+Make sure Node.js is installed on your system. Download it from nodejs.org.
+Prepare the Project:
+
+Save the code to a file, e.g., server.js.
+Make sure the httpCodes.mjs file exists and contains proper HTTP status codes (or replace with hardcoded values like 200).
+Install Dependencies:
+
+Navigate to the project folder in your terminal.
+Run:
+bash
+نسخ
+تحرير
+npm init -y
+npm install express
+Start the Server:
+
+Run the server:
+bash
+نسخ
+تحرير
+node server.js
+Access the Server:
+
+Open your browser and visit:
+http://localhost:8000 for the root endpoint.
+http://localhost:8000/tmp/poem for the poem.
+http://localhost:8000/tmp/quote for a random quote.
+Use tools like Postman or curl for the POST request to /tmp/sum/:a/:b.
