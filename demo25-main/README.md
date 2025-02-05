@@ -48,15 +48,4 @@ Hello World. Session Created At: 2025-02-05T12:34:56.789Z
 - Ensure the `logs` directory exists for session storage.
 - Sessions are saved after every request for data consistency.
 
-🗂️ Folder Structure
-```
-demo25/
-├── modules/
-│   └── sessionMiddleware.mjs
-├── utils/
-├── server.mjs
-├── package.json
-└── logs/
-    └── sessions.json
-```
 
