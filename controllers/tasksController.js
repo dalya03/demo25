@@ -1,5 +1,5 @@
 // controllers/tasksController.js
-const { tasks, Task } = require('../models/taskModel');
+const { tasks, Task } = require('../modules/taskModel');
 
 
 const createTask = (req, res) => {
