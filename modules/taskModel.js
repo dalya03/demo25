@@ -1,12 +1,15 @@
-// models/taskModel.js
+// modules/taskModel.js
 
-let tasks = [];  
-
-
-function Task(id, title, description) {
-    this.id = id;
-    this.title = title;
-    this.description = description;
+class Task {
+    constructor(id, title, description) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+    }
 }
 
-module.exports = { tasks, Task };
+let tasks = [];  
+tasks.push(new Task(1, "Task 1", "Description of Task 1"));
+tasks.push(new Task(2, "Task 2", "Description of Task 2"));
+
+export { tasks, Task };
