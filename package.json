@@ -2,10 +2,12 @@
   "name": "decision-tree-api",
   "version": "1.0.0",
   "main": "server.mjs",
+  "type": "module",
   "scripts": {
     "start": "node --experimental-modules server.mjs"
   },
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "uuid": "^11.1.0"
   }
 }
