@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deck Game</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="/manifest.json"> <!-- تضمين ملف الـ manifest -->
 
     <style>
         body {
@@ -101,7 +102,21 @@
         <div id="drawnCard"></div>
         <div class="error" id="error"></div>
     </main>
+    
     <script>
+        // تسجيل الـ Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+
         let deckId = null;
 
         async function handleCreateDeck() {
