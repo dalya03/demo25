@@ -31,7 +31,7 @@ This will execute the script defined under `"start"` in `package.json`, typicall
 ### 4. Open the Project in the Browser
 Once the server starts, open the following URL in your web browser:
 ```
-http://localhost:8000
+http://localhost:5000
 ```
 If the project runs on a different port, check the terminal output for the correct URL.
 
