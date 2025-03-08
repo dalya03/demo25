@@ -14,6 +14,25 @@ git clone <repository-url>
 cd <project-folder>
 ```
 
+Here's how you can update your `README.md` to include the installation step:  
+
+```md
+## 📌 Installation
+
+Before running the project, install the necessary dependencies:
+
+```sh
+npm install pg dotenv
+```
+
+- **pg** → PostgreSQL client for Node.js  
+- **dotenv** → Loads environment variables from `.env`  
+
+Make sure to create a `.env` file and configure your database connection.  
+```
+
+Would you like me to add more details on setting up the `.env` file and running the project? 🚀
+
 ### 2. Install Dependencies
 Run the following command in the terminal to install all necessary dependencies:
 ```sh
@@ -27,6 +46,8 @@ Run the following command to start the project:
 npm start
 ```
 This will execute the script defined under `"start"` in `package.json`, typically running a development server.
+
+
 
 ### 4. Open the Project in the Browser
 Once the server starts, open the following URL in your web browser:
