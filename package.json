@@ -1,7 +1,7 @@
 {
   "name": "decision-tree-api",
   "version": "1.0.0",
-  "main": "server.mjs",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node server.js"
