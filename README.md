@@ -24,15 +24,7 @@ Before running the project, install the necessary dependencies:
 ```sh
 npm install pg dotenv
 ```
-URL DATABASE:
- https://pghero-dpg-cv5m0vtumphs73b3fq6g-a.onrender.com/
-password:
-134edfb39a615e6b5b606208b38b82f3
 
-username:
-pghero-d2984198
-- **pg** → PostgreSQL client for Node.js  
-- **dotenv** → Loads environment variables from `.env`  
 
 Make sure to create a `.env` file and configure your database connection.  
 ```
